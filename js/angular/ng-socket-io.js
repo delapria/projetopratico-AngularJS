@@ -2,7 +2,7 @@
 'use strict';
 
 angular.module('socket-io', []).factory('socket', function($rootScope, io) {
-    var socket = io.connect(),
+    var socket = io.connect('http://127.0.0.1:3000'),
         events = {},
         that = {};
 
